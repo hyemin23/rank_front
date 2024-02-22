@@ -1,5 +1,6 @@
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import { Suspense } from "react";
+import { openGrapData } from "../../shared-metadata";
 import { getCardDetailInfo } from "../_lib/getCardDetailInfo";
 
 type Props = {
@@ -7,24 +8,21 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  // read route params
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = params;
   const path = decodeURIComponent(id);
   const detailData = await getCardDetailInfo(path);
-
-  console.log("detailData", detailData);
-  // optionally access and extend (rather than replace) parent metadata
-  const previousImages = (await parent).openGraph?.images || [];
 
   return {
     category: "시계",
     title: detailData.name,
     openGraph: {
-      images: ["/some-specific-page-image.jpg", ...previousImages],
+      ...openGrapData,
+      title: `${path} 시계`,
+      siteName: "명품 시계 계급도",
+      description: `${new Date().getFullYear()} 남자 여자 ${path} 명품 시계 계급도`,
+      url: `http://www.luxuryranking.net/watch/${path}`,
+      images: `/${detailData.name}.${detailData.extend}`,
     },
   };
 }

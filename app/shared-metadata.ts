@@ -6,6 +6,6 @@ export const openGrapData = {
   ],
   type: "website",
   url: ["http://www.luxuryranking.net"],
-  images: "rank.jpg",
+  images: ["/rank.jpg"],
   siteName: ["계급도"],
 };

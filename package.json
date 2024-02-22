@@ -7,16 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "deploy": "aws s3 sync ./dist s3://luxuryranking.net --profile=rank_back",
-     "invalidate": "aws cloudfront create-invalidation --profile=rank_back --distribution-id E2FZ6UWL2D8LG3 --paths '/*'"
-
-    
+    "deploy": "aws s3 sync ./dist s3://luxuryranking.net --profile=rank_back",
+    "invalidate": "aws cloudfront create-invalidation --profile=rank_back --distribution-id E2FZ6UWL2D8LG3 --paths '/*'"
   },
   "dependencies": {
     "next": "14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18",
-    "react-lottie-player": "^1.5.6"
+    "react-lottie-player": "^1.5.6",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@types/node": "^20",
