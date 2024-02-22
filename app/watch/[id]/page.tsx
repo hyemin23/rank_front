@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "명품 시계 계급도",
       description: `${new Date().getFullYear()} 남자 여자 ${path} 명품 시계 계급도`,
       url: `http://www.luxuryranking.net/watch/${path}`,
-      images: `/${detailData.name}.${detailData.extend}`,
+      images: `/images/${detailData.name}.${detailData.extend}`,
     },
   };
 }
