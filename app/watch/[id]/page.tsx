@@ -11,12 +11,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = params;
   const path = decodeURIComponent(id);
-
-  console.log("path : ", path);
-
   const detailData = await getCardDetailInfo(path);
-
-  console.log("detailData", detailData);
 
   return {
     category: "시계",

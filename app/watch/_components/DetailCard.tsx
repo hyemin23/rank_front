@@ -13,25 +13,33 @@ export default function DetailCard({ data, path }: { data: any; path: any }) {
     "3": "bg-[#f9f0ff] text-[#531dab]",
   };
 
-  const tagContents = (title: string, key: number) => {
-    const randomIndex = Math.floor(
-      Math.random() * Object.keys(titleColor).length
-    );
-    const randomColorClass = titleColor[randomIndex];
+  const tagContents = (title: string) => {
+    const tagsArray = title.split("#").filter(Boolean);
 
     return (
-      <div
-        key={key}
-        className={`font-semibold my-2 py-[2px] px-[2px] ml-2 text-xs ${randomColorClass}`}
-      >
-        <p>{`#${title}`}</p>
-      </div>
+      <>
+        {tagsArray.map((tag, index) => {
+          const randomIndex = Math.floor(
+            Math.random() * Object.keys(titleColor).length
+          );
+          const randomColorClass = titleColor[randomIndex];
+
+          return (
+            <div
+              key={index}
+              className={`mt-4 mobile:mt-2 font-semibold ml-[4px] text-xs flex-grow`}
+            >
+              <span className={`${randomColorClass} `}>{`#${tag}`}</span>
+            </div>
+          );
+        })}
+      </>
     );
   };
 
   return (
     data && (
-      <div className="max-w-screen-xl m-4 rounded-xl shadow-lg xl:w-1/6 lg:w-1/6 mobile:w-[40%] bg-white mobile:m-2 border">
+      <div className="max-w-screen-xl m-4 rounded-xl shadow-lg xl:w-1/6 lg:w-1/6 mobile:w-[40%] bg-white mobile:m-2 border h-[290px]">
         <Link href={`${path}/${data.name}`}>
           <div className="h-[230px] w-full mobile:h-[120px]">
             <Image
@@ -82,10 +90,8 @@ export default function DetailCard({ data, path }: { data: any; path: any }) {
             </p>
           </div>
 
-          <div className="flex w-full flex-wrap">
-            {["가격너무비쌈", "귀족용", "사다죽음"].map((data, key) =>
-              tagContents(data, key)
-            )}
+          <div className="flex w-full flex-wrap mt-[5px]">
+            {tagContents(data.hash_tag)}
           </div>
         </Link>
       </div>

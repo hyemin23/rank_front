@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary",
     site: "http://www.luxuryranking.net",
     creator: "rank",
-    images: "/rank.jpg",
+    images: "/images/rank.jpg",
   },
   keywords: `${new Date().getFullYear()} 남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 차 국산차 브랜드 군대 순위 계급 계급도`,
   description: `명품 계급 순위와 등급을 알려드립니다. 계급도를 통해 ${new Date().getFullYear()} 최신 남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 브랜드 군대 순위 및 계급도 순위를 조회해 보세요.`,
