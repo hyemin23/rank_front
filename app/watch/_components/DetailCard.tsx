@@ -5,7 +5,6 @@ type TitleColorType = {
 };
 
 export default function DetailCard({ data, path }: { data: any; path: any }) {
-  console.log("detail");
   // 테일윈드 css는 동적 style이 적용이 안되므로 객체로 만들어야함.
   const titleColor: TitleColorType = {
     "0": "bg-[#fff7e6] text-[#d46b08]",

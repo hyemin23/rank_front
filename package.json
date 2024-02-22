@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+     "deploy": "aws s3 sync ./dist s3://luxuryranking.net --profile=rank_back",
+     "invalidate": "aws cloudfront create-invalidation --profile=rank_back --distribution-id E2FZ6UWL2D8LG3 --paths '/*'"
+
+    
   },
   "dependencies": {
     "next": "14.1.0",
