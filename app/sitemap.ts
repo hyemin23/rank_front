@@ -1,25 +1,22 @@
-import { MetadataRoute } from "next";
+import { getCardData } from "./watch/_lib/getCardData";
 
 const domain = "https://www.luxuryranking.net";
-export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${domain}/watch`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
-    },
-    // {
-    //   url: `${domain}/watch`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "daily",
-    //   priority: 1,
-    // },
-    // {
-    //   url: `${domain}/watch`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "daily",
-    //   priority: 1,
-    // },
-  ];
+export default async function sitemap() {
+  const data = await getCardData("watch");
+
+  const cate = ["watch"].map((cdata) => ({
+    url: `${domain}/${cdata}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 1,
+  }));
+
+  const routes = data.map((dedata: any) => ({
+    url: `${domain}/watch/${dedata.name}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 1,
+  }));
+
+  return [...cate, ...routes];
 }

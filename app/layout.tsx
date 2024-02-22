@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   authors: { name: "rank", url: "http://www.luxuryranking.net" },
   title: {
-    absolute: `${new Date().getFullYear()}남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 차 국산차 브랜드 군대 순위 및 당신의 계급을 알려드립니다. 계급도 조회해 보세요.`,
+    absolute: `${new Date().getFullYear()} 명품 시계 가방 공무원 계급도 계급을 알려드립니다.`,
     default: "계급도",
     template: "%s 계급도",
   },
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ko_KR",
     title: "계급도",
-    description: `${new Date().getFullYear()}남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 차 국산차 브랜드 군대 순위 및 당신의 계급을 알려드립니다. 계급도 조회해 보세요.`,
+    description: `${new Date().getFullYear()} 남자 여자 명품 시계 가방 구두 벨트 옷 차 맛집 브랜드 공무원 순위 및 계급을 알려드립니다. 계급도 조회해 보세요.`,
     type: "website",
     url: "http://www.luxuryranking.net",
     images: "/images/rank.jpg",
     siteName: "계급도",
   },
   twitter: {
-    description: `${new Date().getFullYear()}남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 차 국산차 브랜드 군대 순위 및 당신의 계급을 알려드립니다. 계급도 조회해 보세요.`,
+    description: `${new Date().getFullYear()} 남자 여자 명품 시계 가방 구두 벨트 옷 차 맛집 브랜드 공무원 순위 및 계급을 알려드립니다. 계급도 조회해 보세요.`,
     title: "계급도",
     card: "summary",
     site: "http://www.luxuryranking.net",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     images: "/images/rank.jpg",
   },
   keywords: `${new Date().getFullYear()} 남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 차 국산차 브랜드 군대 순위 계급 계급도`,
-  description: `명품 계급 순위와 등급을 알려드립니다. 계급도를 통해 ${new Date().getFullYear()} 최신 남자 여자 명품 시계 가방 구두 벨트 옷 외제차 자동차 음식 맛집 브랜드 군대 순위 및 계급도 순위를 조회해 보세요.`,
+  description: `${new Date().getFullYear()} 남자 여자 명품 시계 가방 구두 벨트 옷 차 맛집 브랜드 공무원 순위 및 계급을 알려드립니다. 계급도 조회해 보세요.`,
 };
 
 export default function RootLayout({

@@ -170,7 +170,7 @@ const TopNavigation = () => {
             </li>
             <li className="relative group px-3 py-2">
               <button className="hover:opacity-50 cursor-default">
-                군대계급
+                공무원계급
               </button>
               <div className="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[120px] transform">
                 <div className="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full">
