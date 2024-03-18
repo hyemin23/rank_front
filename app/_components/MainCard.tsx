@@ -39,7 +39,7 @@ export default async function MainCard({ path }: { path: string }) {
                       ?.filter(
                         (filterData: any) => filterData.fk_rank_star_id === rank
                       )
-                      .map((data: any, index: number) => (
+                      ?.map((data: any, index: number) => (
                         <DetailCard key={index} data={data} path={path} />
                       ))}
                 </div>
