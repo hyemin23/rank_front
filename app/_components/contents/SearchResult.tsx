@@ -1,4 +1,4 @@
-import DetailCard from "@/app/watch/_components/DetailCard";
+import DetailCard from "@/app/_components/DetailCard";
 
 const SearchResult = ({ path, searchData }: any) => {
   return (

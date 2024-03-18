@@ -1,6 +1,6 @@
 import { Suspense } from "react";
+import MainCard from "../_components/MainCard";
 import TabButton from "../_components/contents/TabButton";
-import MainCard from "./_components/MainCard";
 
 export default function WatchPage() {
   const path: string = "watch";
