@@ -2,9 +2,13 @@ import SearchComponents from "@/app/_components/contents/SearchComponents";
 import { getCardData } from "../_lib/getCardData";
 import DetailCard from "./DetailCard";
 
+const getData = async (path: string) => {
+  const cardData = await getCardData(path);
+  return cardData;
+};
 // 서버 컴포넌트
 export default async function MainCard({ path }: { path: string }) {
-  const cardData = await getCardData(path);
+  const cardData: any = await getData(path);
 
   // categoryData에서 중복 등급 정리
   const uniqueRanks = Array.from(
