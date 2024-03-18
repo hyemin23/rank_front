@@ -1,3 +1,4 @@
+"use server";
 export async function getCardDetailInfo(id: string) {
   const res = await fetch(`https://allinfoquestion.com/watchInfo/${id}`);
   if (!res.ok) {
