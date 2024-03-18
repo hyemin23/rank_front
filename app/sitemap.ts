@@ -1,4 +1,4 @@
-import { getCardData } from "./getCardData";
+import { getCardData } from "./_lib/getCardData";
 
 const domain = "https://www.luxuryranking.net";
 export default async function sitemap() {
