@@ -36,7 +36,7 @@ export default async function MainCard({ path }: { path: string }) {
                 <div className="flex w-full flex-wrap items-center justify-center py-15 mobile:py-2 mobile:gap-[5px]">
                   {cardData &&
                     cardData
-                      .filter(
+                      ?.filter(
                         (filterData: any) => filterData.fk_rank_star_id === rank
                       )
                       .map((data: any, index: number) => (
