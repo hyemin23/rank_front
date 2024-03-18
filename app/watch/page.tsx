@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import MainCard from "../_components/MainCard";
 import TabButton from "../_components/contents/TabButton";
 
 export default function WatchPage() {
@@ -7,7 +6,7 @@ export default function WatchPage() {
   return (
     <Suspense fallback={<div>로딩중 . . .</div>}>
       <TabButton />
-      <MainCard path={path} />
+      {/* <MainCard path={path} /> */}
     </Suspense>
   );
 }
