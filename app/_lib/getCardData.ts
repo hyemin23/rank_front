@@ -1,3 +1,4 @@
+"server client";
 export async function getCardData(path: string) {
   console.log("path", path);
   const res = await fetch(`https://allinfoquestion.com/${path}/${1}`, {
