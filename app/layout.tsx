@@ -1,6 +1,5 @@
 import { Metadata, Viewport } from "next";
 import { Noto_Sans_KR } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 
 const NotoSansKR = Noto_Sans_KR({
@@ -65,9 +64,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={NotoSansKR.className}>
-      <Head>
-        <meta name="google-adsense-account" content="ca-pub-9538049966044288" />
-      </Head>
+      <meta name="google-adsense-account" content="ca-pub-9538049966044288" />
       <body className="mx-auto min-h-screen max-w-screen-xl">{children}</body>
     </html>
   );
