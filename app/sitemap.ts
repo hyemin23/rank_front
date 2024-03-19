@@ -1,4 +1,5 @@
 import { getCardData } from "./_lib/getCardData";
+export const dynamic = "force-dynamic";
 
 const domain = "https://www.luxuryranking.net";
 export default async function sitemap() {

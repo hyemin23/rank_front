@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import MainCard from "../_components/MainCard";
 import TabButton from "../_components/contents/TabButton";
 import { getCardData } from "../_lib/getCardData";
+export const dynamic = "force-dynamic";
 
 const getData = async (path: string) => {
   const cardData = await getCardData(path);
