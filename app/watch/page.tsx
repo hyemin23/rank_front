@@ -1,8 +1,8 @@
 "server client";
 import { Suspense } from "react";
-import MainCard from "../_components/MainCard";
-import TabButton from "../_components/contents/TabButton";
-import { getCardData } from "../_lib/getCardData";
+import MainCard from "../../components/MainCard";
+import TabButton from "../../components/contents/TabButton";
+import { getCardData } from "../../lib/getCardData";
 // export const dynamic = "force-dynamic";
 
 const getData = async (path: string) => {

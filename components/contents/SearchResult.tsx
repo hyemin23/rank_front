@@ -1,4 +1,4 @@
-import DetailCard from "@/app/_components/DetailCard";
+import DetailCard from "@/components/DetailCard";
 
 const SearchResult = ({ path, searchData }: any) => {
   return (

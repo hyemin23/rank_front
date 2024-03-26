@@ -1,4 +1,4 @@
-import SearchComponents from "@/app/_components/contents/SearchComponents";
+import SearchComponents from "@/components/contents/SearchComponents";
 
 import DetailCard from "./DetailCard";
 
