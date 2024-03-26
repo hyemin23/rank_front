@@ -1,4 +1,3 @@
-"use client";
 import lottieJson from "@/public/loti2.json";
 import Link from "next/link";
 import Lottie from "react-lottie-player";
