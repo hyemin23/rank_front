@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Suspense } from "react";
 import { getCardDetailInfo } from "../../_lib/getCardDetailInfo";
-import { openGrapData } from "../../shared-metadata";
+import { openGrapData } from "../../_lib/shared-metadata";
 
 type Props = {
   params: { id: string };

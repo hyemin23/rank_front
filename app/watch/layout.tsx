@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import BottomNavigation from "../_components/navigation/BottomNavigation";
 import TopNavigation from "../_components/navigation/TopNavigation";
-import { openGrapData } from "../shared-metadata";
+import { openGrapData } from "../_lib/shared-metadata";
 
 export const metadata: Metadata = {
   title: {

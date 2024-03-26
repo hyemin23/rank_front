@@ -1,4 +1,4 @@
-import { getCardData } from "./_lib/getCardData";
+import { getCardData } from "./getCardData";
 export const dynamic = "force-dynamic";
 
 const domain = "https://www.luxuryranking.net";
